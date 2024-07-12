@@ -3,7 +3,7 @@ COMPSs Workflow Information:
   description: Lysozyme in water full COMPSs application
   license: Apache-2.0
   sources: [src/, launch_full.sh]
-  data_persistence: False
+  data_persistence: True
 
 Authors:
   name: Javier Conejero

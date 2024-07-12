@@ -1,0 +1,72 @@
+Port 43354 is already in use or time_wait, incrementing port by 1
+------ Launching COMPSs application ------
+PROVENANCE | Setting YAML to 'FULL.yaml'
+PROVENANCE | Setting 'output_profile' to 'App_Profile.json' by default
+PROVENANCE | Setting 'graph' to 'true' by default
+[ INFO ] Using default execution type: compss
+
+----------------- Executing lysozyme_in_water_full.py --------------------------
+
+[(443)    API]  -  Starting COMPSs Runtime v3.3 (build 20240603-1704.r8aa0f66148d3707532e661c476cbcb3e1d09ad50)
+Starting demo
+[(150312)    API]  -  ------- COMPSs Task Execution Summary per Worker ------
+[(150313)    API]  -  --- Summary for COMPSs Worker gs12r1b50-ib0
+[(150313)    API]  -  2 lysozyme_in_water_full.convert_xvg_to_png tasks have been executed
+[(150313)    API]  -  0 lysozyme_in_water_full.add_solvate tasks have been executed
+[(150313)    API]  -  0 lysozyme_in_water_full.generate_topology tasks have been executed
+[(150313)    API]  -  0 lysozyme_in_water_full.replace_solvent_with_ions tasks have been executed
+[(150313)    API]  -  0 lysozyme_in_water_full.merge_results tasks have been executed
+[(150313)    API]  -  0 lysozyme_in_water_full.define_box tasks have been executed
+[(150313)    API]  -  3 lysozyme_in_water_full.assemble_tpr tasks have been executed
+[(150313)    API]  -  0 lysozyme_in_water_full.energy_minimization tasks have been executed
+[(150313)    API]  -  0 lysozyme_in_water_full.energy_analisis tasks have been executed
+[(150313)    API]  -  --- Total executed tasks in COMPSs Worker gs12r1b50-ib0: 5
+[(150313)    API]  -  --- Summary for COMPSs Worker gs12r1b10-ib0
+[(150313)    API]  -  1 lysozyme_in_water_full.convert_xvg_to_png tasks have been executed
+[(150313)    API]  -  3 lysozyme_in_water_full.add_solvate tasks have been executed
+[(150313)    API]  -  3 lysozyme_in_water_full.generate_topology tasks have been executed
+[(150313)    API]  -  3 lysozyme_in_water_full.replace_solvent_with_ions tasks have been executed
+[(150313)    API]  -  1 lysozyme_in_water_full.merge_results tasks have been executed
+[(150313)    API]  -  3 lysozyme_in_water_full.define_box tasks have been executed
+[(150313)    API]  -  3 lysozyme_in_water_full.assemble_tpr tasks have been executed
+[(150313)    API]  -  3 lysozyme_in_water_full.energy_minimization tasks have been executed
+[(150313)    API]  -  3 lysozyme_in_water_full.energy_analisis tasks have been executed
+[(150313)    API]  -  --- Total executed tasks in COMPSs Worker gs12r1b10-ib0: 23
+[(150313)    API]  -  -------------------------------------------------------
+[(150313)    API]  -  
+[(150313)    API]  -  ------------ COMPSs Task Execution Summary ------------
+[(150313)    API]  -  3 lysozyme_in_water_full.convert_xvg_to_png tasks have been executed
+[(150314)    API]  -  3 lysozyme_in_water_full.add_solvate tasks have been executed
+[(150314)    API]  -  3 lysozyme_in_water_full.generate_topology tasks have been executed
+[(150314)    API]  -  3 lysozyme_in_water_full.replace_solvent_with_ions tasks have been executed
+[(150314)    API]  -  1 lysozyme_in_water_full.merge_results tasks have been executed
+[(150314)    API]  -  3 lysozyme_in_water_full.define_box tasks have been executed
+[(150314)    API]  -  6 lysozyme_in_water_full.assemble_tpr tasks have been executed
+[(150314)    API]  -  3 lysozyme_in_water_full.energy_minimization tasks have been executed
+[(150314)    API]  -  3 lysozyme_in_water_full.energy_analisis tasks have been executed
+[(150314)    API]  -  Total executed tasks: 28
+[(150314)    API]  -  -------------------------------------------------------
+[(152002)    API]  -  Execution Finished
+
+------------------------------------------------------------
+PROVENANCE | STARTING WORKFLOW PROVENANCE SCRIPT
+PROVENANCE | If needed, Provenance generation can be triggered by hand using the following commands:
+PROVENANCE | /apps/GPP/COMPSs/3.3.1/Runtime/scripts/utils/compss_gengraph svg /home/bsc/bsc019057/.COMPSs/3846825//monitor/complete_graph.dot
+PROVENANCE | python3 /apps/GPP/COMPSs/3.3.1/Runtime/scripts/system/provenance/generate_COMPSs_RO-Crate.py FULL.yaml /home/bsc/bsc019057/.COMPSs/3846825//dataprovenance.log
+PROVENANCE | TIP for BSC cluster users: before triggering generation by hand, run first: salloc -p interactive
+PROVENANCE | Generating graph for Workflow Provenance
+PROVENANCE | Number of edges in the graph: 43
+Output file: /home/bsc/bsc019057/.COMPSs/3846825//monitor/complete_graph.svg
+INFO: Generating Graph with legend
+DONE
+PROVENANCE | Ended generating graph for Workflow Provenance. TIME: 0 s
+PROVENANCE | STARTING RO-CRATE GENERATION SCRIPT
+PROVENANCE | COMPSs version: 3.3, out_profile: App_Profile.json, main_entity: /gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/src/lysozyme_in_water_full.py
+PROVENANCE | COMPSs runtime detected inputs (7)
+PROVENANCE | COMPSs runtime detected outputs (31)
+PROVENANCE | dataprovenance.log processing TIME: 0.00010538101196289062 s
+PROVENANCE | Application source files detected (5)
+PROVENANCE | RO-Crate adding source files TIME: 0.0029633045196533203 s
+PROVENANCE | RO-Crate adding input files TIME (Persistence: True): 0.000993490219116211 s
+PROVENANCE | RO-Crate adding output files TIME (Persistence: True): 0.0020585060119628906 s
+PROVENANCE | WARNING: 'Agent' not specified in FULL.yaml. First author selected by default.

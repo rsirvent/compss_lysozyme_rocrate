@@ -1,0 +1,64 @@
+# This file was created Fri Jul 12 13:15:57 2024
+# Created by:
+#                  :-) GROMACS - gmx energy, VERSION 5.1.2 (-:
+# 
+# Executable:   /apps/GPP/COMPSs/TUTORIALS/Libraries/gromacs5.1.2/bin/gmx
+# Data prefix:  /apps/GPP/COMPSs/TUTORIALS/Libraries/gromacs5.1.2
+# Command line:
+#   gmx energy -f /home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/./tmp.wjMB9bR3bd/53a542ce-fcd2-49d9-8e6e-427bad2f3e5c/gs12r1b10-ib0/sandBox/job_24/1xyw_em_energy.edr -o /home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/./tmp.wjMB9bR3bd/53a542ce-fcd2-49d9-8e6e-427bad2f3e5c/gs12r1b10-ib0/sandBox/job_24/1xyw_potential.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Good gRace! Old Maple Actually Chews Slate
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Potential"
+    0.000000  -520126.312500
+    1.000000  -529887.937500
+    2.000000  -541993.000000
+    3.000000  -556380.875000
+    4.000000  -572300.187500
+    5.000000  -584939.000000
+    6.000000  -589292.000000
+    7.000000  -593516.812500
+    8.000000  -596023.812500
+    9.000000  -598306.437500
+   10.000000  -600542.125000
+   11.000000  -601581.437500
+   12.000000  -603467.875000
+   14.000000  -606577.562500
+   15.000000  -607369.875000
+   16.000000  -611832.375000
+   18.000000  -613072.937500
+   19.000000  -613737.562500
+   20.000000  -614473.875000
+   22.000000  -617358.312500
+   23.000000  -617800.562500
+   24.000000  -622530.937500
+   26.000000  -623140.750000
+   27.000000  -623737.562500
+   28.000000  -623756.125000
+   30.000000  -626558.750000
+   31.000000  -628431.062500
+   32.000000  -632119.437500
+   34.000000  -632544.500000
+   35.000000  -633040.562500
+   36.000000  -633163.937500
+   37.000000  -633464.750000
+   39.000000  -635625.312500
+   40.000000  -635901.125000
+   41.000000  -638331.000000
+   43.000000  -638787.562500
+   44.000000  -639120.812500
+   45.000000  -639477.312500
+   46.000000  -639522.937500
+   47.000000  -639688.500000
+   49.000000  -641623.375000

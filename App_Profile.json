@@ -1,13 +1,13 @@
 {
  "cloud": {},
  "resources": {
-  "gs05r2b63-ib0": {
+  "gs12r1b50-ib0": {
    "implementations": {
     "lysozyme_in_water_full.convert_xvg_to_png": {
-     "maxTime": -9223372036854775808,
-     "executions": 0,
-     "avgTime": 100,
-     "minTime": 9223372036854775807
+     "maxTime": 97,
+     "executions": 2,
+     "avgTime": 75,
+     "minTime": 54
     },
     "lysozyme_in_water_full.add_solvate": {
      "maxTime": -9223372036854775808,
@@ -40,10 +40,10 @@
      "minTime": 9223372036854775807
     },
     "lysozyme_in_water_full.assemble_tpr": {
-     "maxTime": 404,
+     "maxTime": 388,
      "executions": 3,
-     "avgTime": 385,
-     "minTime": 373
+     "avgTime": 357,
+     "minTime": 334
     },
     "lysozyme_in_water_full.energy_minimization": {
      "maxTime": -9223372036854775808,
@@ -59,119 +59,119 @@
     }
    }
   },
-  "gs05r2b62-ib0": {
+  "gs12r1b10-ib0": {
    "implementations": {
     "lysozyme_in_water_full.convert_xvg_to_png": {
-     "maxTime": 86,
-     "executions": 3,
-     "avgTime": 63,
-     "minTime": 37
+     "maxTime": 160,
+     "executions": 1,
+     "avgTime": 160,
+     "minTime": 160
     },
     "lysozyme_in_water_full.add_solvate": {
-     "maxTime": 246,
+     "maxTime": 241,
      "executions": 3,
-     "avgTime": 226,
-     "minTime": 193
+     "avgTime": 225,
+     "minTime": 194
     },
     "lysozyme_in_water_full.generate_topology": {
-     "maxTime": 396,
+     "maxTime": 392,
      "executions": 3,
-     "avgTime": 386,
-     "minTime": 369
+     "avgTime": 375,
+     "minTime": 367
     },
     "lysozyme_in_water_full.replace_solvent_with_ions": {
-     "maxTime": 97,
+     "maxTime": 94,
      "executions": 3,
-     "avgTime": 87,
-     "minTime": 79
+     "avgTime": 83,
+     "minTime": 75
     },
     "lysozyme_in_water_full.merge_results": {
-     "maxTime": 489,
+     "maxTime": 520,
      "executions": 1,
-     "avgTime": 489,
-     "minTime": 489
+     "avgTime": 520,
+     "minTime": 520
     },
     "lysozyme_in_water_full.define_box": {
-     "maxTime": 63,
+     "maxTime": 50,
      "executions": 3,
-     "avgTime": 48,
-     "minTime": 37
+     "avgTime": 50,
+     "minTime": 50
     },
     "lysozyme_in_water_full.assemble_tpr": {
-     "maxTime": 275,
+     "maxTime": 276,
      "executions": 3,
-     "avgTime": 274,
-     "minTime": 273
+     "avgTime": 270,
+     "minTime": 265
     },
     "lysozyme_in_water_full.energy_minimization": {
-     "maxTime": 145406,
+     "maxTime": 144902,
      "executions": 3,
-     "avgTime": 140558,
-     "minTime": 138089
+     "avgTime": 139982,
+     "minTime": 137407
     },
     "lysozyme_in_water_full.energy_analisis": {
-     "maxTime": 49,
+     "maxTime": 64,
      "executions": 3,
-     "avgTime": 33,
-     "minTime": 25
+     "avgTime": 38,
+     "minTime": 26
     }
    }
   }
  },
  "implementations": {
   "lysozyme_in_water_full.convert_xvg_to_png": {
-   "maxTime": 86,
+   "maxTime": 160,
    "executions": 3,
-   "avgTime": 63,
-   "minTime": 37
+   "avgTime": 103,
+   "minTime": 54
   },
   "lysozyme_in_water_full.add_solvate": {
-   "maxTime": 246,
+   "maxTime": 241,
    "executions": 3,
-   "avgTime": 226,
-   "minTime": 193
+   "avgTime": 225,
+   "minTime": 194
   },
   "lysozyme_in_water_full.generate_topology": {
-   "maxTime": 396,
+   "maxTime": 392,
    "executions": 3,
-   "avgTime": 386,
-   "minTime": 369
+   "avgTime": 375,
+   "minTime": 367
   },
   "lysozyme_in_water_full.replace_solvent_with_ions": {
-   "maxTime": 97,
+   "maxTime": 94,
    "executions": 3,
-   "avgTime": 87,
-   "minTime": 79
+   "avgTime": 83,
+   "minTime": 75
   },
   "lysozyme_in_water_full.merge_results": {
-   "maxTime": 489,
+   "maxTime": 520,
    "executions": 1,
-   "avgTime": 489,
-   "minTime": 489
+   "avgTime": 520,
+   "minTime": 520
   },
   "lysozyme_in_water_full.define_box": {
-   "maxTime": 63,
+   "maxTime": 50,
    "executions": 3,
-   "avgTime": 48,
-   "minTime": 37
+   "avgTime": 50,
+   "minTime": 50
   },
   "lysozyme_in_water_full.assemble_tpr": {
-   "maxTime": 404,
+   "maxTime": 388,
    "executions": 6,
-   "avgTime": 329,
-   "minTime": 273
+   "avgTime": 313,
+   "minTime": 265
   },
   "lysozyme_in_water_full.energy_minimization": {
-   "maxTime": 145406,
+   "maxTime": 144902,
    "executions": 3,
-   "avgTime": 140558,
-   "minTime": 138089
+   "avgTime": 139982,
+   "minTime": 137407
   },
   "lysozyme_in_water_full.energy_analisis": {
-   "maxTime": 49,
+   "maxTime": 64,
    "executions": 3,
-   "avgTime": 33,
-   "minTime": 25
+   "avgTime": 38,
+   "minTime": 26
   }
  }
 }
