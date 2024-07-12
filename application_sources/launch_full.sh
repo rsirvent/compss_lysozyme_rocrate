@@ -15,23 +15,25 @@
 
   # Load necessary modules
   module purge
-  module load intel/2017.4 impi/2017.4 mkl/2017.4 bsc/1.0
-  export COMPSS_PYTHON_VERSION=3.9.10
-  module load COMPSs/3.3
+  module load intel/2023.2.0 impi/2021.10.0 mkl/2023.2.0 bsc/1.0
+  export COMPSS_PYTHON_VERSION=3.12.1
+  module load COMPSs/3.3.1
   # Using gmx binary
-  export GMX_BIN=/apps/COMPSs/TUTORIALS/Libraries/gromacs5.1.2/bin  # exposes gmx binary
+  export GMX_BIN=/apps/GPP/COMPSs/TUTORIALS/Libraries/gromacs5.1.2/bin  # exposes gmx binary
   export PATH=${GMX_BIN}:$PATH
   # Using gmx_mpi binary
-  module load gromacs/2016.4                                        # exposes gmx_mpi binary
+  module load gromacs/2023
   # module load intel/2018.4 mkl/2018.4 impi/2018.4 gromacs/2018.3  # exposes gmx_mpi binary
   # Using grace binary
   module load grace/5.1.25
-  module load gcc/7.2.0 graphviz
+  # module load gcc/13.2.0 
 
   # Submit the job
-  pycompss job submit \
-    --provenance \
-    --qos=debug \
+  enqueue_compss \
+    --provenance=FULL.yaml \
+    --summary \
+    --project_name=bsc19 \
+    --qos=gp_debug \
     --num_nodes=${numNodes} \
     --exec_time=${executionTime} \
     --worker_working_dir=${scriptDir} \

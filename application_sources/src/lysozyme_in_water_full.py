@@ -252,3 +252,6 @@ if __name__=='__main__':
     output_path = sys.argv[3]
 
     main(dataset_path, output_path, config_path)
+
+    import os
+

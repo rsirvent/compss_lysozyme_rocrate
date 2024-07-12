@@ -1,15 +1,18 @@
 {
-    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@context": [
+        "https://w3id.org/ro/crate/1.1/context",
+        "https://w3id.org/ro/terms/workflow-run"
+    ],
     "@graph": [
         {
             "@id": "./",
             "@type": "Dataset",
             "conformsTo": [
                 {
-                    "@id": "https://w3id.org/ro/wfrun/process/0.1"
+                    "@id": "https://w3id.org/ro/wfrun/process/0.4"
                 },
                 {
-                    "@id": "https://w3id.org/ro/wfrun/workflow/0.1"
+                    "@id": "https://w3id.org/ro/wfrun/workflow/0.4"
                 },
                 {
                     "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0"
@@ -17,17 +20,23 @@
             ],
             "creator": [
                 {
-                    "@id": "https://orcid.org/0000-0003-2941-5499"
+                    "@id": "https://orcid.org/0000-0001-6401-6229"
                 }
             ],
-            "datePublished": "2024-01-24T14:28:04+00:00",
-            "description": "Lysozyme in water full COMPSs application, using dataset_small",
+            "datePublished": "2024-07-12T10:15:07+00:00",
+            "description": "Lysozyme in water full COMPSs application",
             "hasPart": [
                 {
                     "@id": "application_sources/src/lysozyme_in_water_full_no_mpi.py"
                 },
                 {
                     "@id": "application_sources/src/lysozyme_in_water.py"
+                },
+                {
+                    "@id": "application_sources/src/lysozyme_in_water_full_singularity.py"
+                },
+                {
+                    "@id": "application_sources/src/lysozyme_in_water_full.py"
                 },
                 {
                     "@id": "complete_graph.svg"
@@ -39,128 +48,140 @@
                     "@id": "compss_submission_command_line.txt"
                 },
                 {
-                    "@id": "ro-crate-info.yaml"
-                },
-                {
-                    "@id": "application_sources/src/lysozyme_in_water_full_singularity.py"
-                },
-                {
-                    "@id": "application_sources/src/lysozyme_in_water_full.py"
+                    "@id": "FULL.yaml"
                 },
                 {
                     "@id": "application_sources/launch_full.sh"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/config/energy.selection"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/config/energy.selection"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/config/genion.group"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/config/genion.group"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/config/ions.mdp"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/config/ions.mdp"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/config/minim.mdp"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/config/minim.mdp"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/dataset_small/1aki.pdb"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/dataset_small/1aki.pdb"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/dataset_small/1u3m.pdb"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/dataset_small/1u3m.pdb"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/dataset_small/1xyw.pdb"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/dataset_small/1xyw.pdb"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1aki.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki.gro"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1aki.top"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki.top"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1aki_em.tpr"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_em.tpr"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1aki_em_energy.edr"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_em_energy.edr"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1aki_ions.tpr"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_ions.tpr"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1aki_newbox.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_newbox.gro"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1aki_potential.xvg"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_potential.png"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1aki_solv.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_potential.xvg"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1aki_solv_ions.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_solv.gro"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1u3m.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_solv_ions.gro"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1u3m.top"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m.gro"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1u3m_em.tpr"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m.top"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1u3m_em_energy.edr"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_em.tpr"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1u3m_ions.tpr"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_em_energy.edr"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1u3m_newbox.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_ions.tpr"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1u3m_potential.xvg"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_newbox.gro"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1u3m_solv.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_potential.png"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1u3m_solv_ions.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_potential.xvg"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1xyw.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_solv.gro"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1xyw.top"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_solv_ions.gro"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1xyw_em.tpr"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw.gro"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1xyw_em_energy.edr"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw.top"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1xyw_ions.tpr"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_em.tpr"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1xyw_newbox.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_em_energy.edr"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1xyw_potential.xvg"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_ions.tpr"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1xyw_solv.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_newbox.gro"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1xyw_solv_ions.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_potential.png"
+                },
+                {
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_potential.xvg"
+                },
+                {
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_solv.gro"
+                },
+                {
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_solv_ions.gro"
+                },
+                {
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/POTENTIAL_RESULTS.png"
+                },
+                {
+                    "@id": "compss-3844353.out"
+                },
+                {
+                    "@id": "compss-3844353.err"
                 }
             ],
             "license": "Apache-2.0",
             "mainEntity": {
-                "@id": "application_sources/src/lysozyme_in_water.py"
+                "@id": "application_sources/src/lysozyme_in_water_full.py"
             },
             "mentions": {
-                "@id": "#COMPSs_Workflow_Run_Crate_marenostrum4_SLURM_JOB_ID_31507118"
+                "@id": "#COMPSs_Workflow_Run_Crate_marenostrum5_SLURM_JOB_ID_3844353"
             },
-            "name": "Lysozyme in water full version, using dataset_small",
+            "name": "Lysozyme in water full",
             "publisher": [
                 {
                     "@id": "https://ror.org/05sd8tv96"
@@ -183,28 +204,28 @@
             ]
         },
         {
+            "@id": "mailto:francisco.conejero@bsc.es",
+            "@type": "ContactPoint",
+            "contactType": "Author",
+            "email": "francisco.conejero@bsc.es",
+            "identifier": "francisco.conejero@bsc.es",
+            "url": "https://orcid.org/0000-0001-6401-6229"
+        },
+        {
             "@id": "https://ror.org/05sd8tv96",
             "@type": "Organization",
             "name": "Barcelona Supercomputing Center"
         },
         {
-            "@id": "mailto:Rosa.M.Badia@bsc.es",
-            "@type": "ContactPoint",
-            "contactType": "Author",
-            "email": "Rosa.M.Badia@bsc.es",
-            "identifier": "Rosa.M.Badia@bsc.es",
-            "url": "https://orcid.org/0000-0003-2941-5499"
-        },
-        {
-            "@id": "https://orcid.org/0000-0003-2941-5499",
+            "@id": "https://orcid.org/0000-0001-6401-6229",
             "@type": "Person",
             "affiliation": {
                 "@id": "https://ror.org/05sd8tv96"
             },
             "contactPoint": {
-                "@id": "mailto:Rosa.M.Badia@bsc.es"
+                "@id": "mailto:francisco.conejero@bsc.es"
             },
-            "name": "Rosa M. Badia"
+            "name": "Javier Conejero"
         },
         {
             "@id": "application_sources/src/lysozyme_in_water_full_no_mpi.py",
@@ -221,16 +242,38 @@
             "@id": "application_sources/src/lysozyme_in_water.py",
             "@type": [
                 "File",
+                "SoftwareSourceCode"
+            ],
+            "contentSize": 7601,
+            "description": "Auxiliary File",
+            "encodingFormat": "text/plain",
+            "name": "lysozyme_in_water.py"
+        },
+        {
+            "@id": "application_sources/src/lysozyme_in_water_full_singularity.py",
+            "@type": [
+                "File",
+                "SoftwareSourceCode"
+            ],
+            "contentSize": 10194,
+            "description": "Auxiliary File",
+            "encodingFormat": "text/plain",
+            "name": "lysozyme_in_water_full_singularity.py"
+        },
+        {
+            "@id": "application_sources/src/lysozyme_in_water_full.py",
+            "@type": [
+                "File",
                 "SoftwareSourceCode",
                 "ComputationalWorkflow"
             ],
-            "contentSize": 7601,
+            "contentSize": 8973,
             "description": "Main file of the COMPSs workflow source files",
             "encodingFormat": "text/plain",
             "image": {
                 "@id": "complete_graph.svg"
             },
-            "name": "lysozyme_in_water.py",
+            "name": "lysozyme_in_water_full.py",
             "programmingLanguage": {
                 "@id": "#compss"
             }
@@ -257,9 +300,9 @@
                 "WorkflowSketch"
             ],
             "about": {
-                "@id": "application_sources/src/lysozyme_in_water.py"
+                "@id": "application_sources/src/lysozyme_in_water_full.py"
             },
-            "contentSize": 28082,
+            "contentSize": 31175,
             "description": "The graph diagram of the workflow, automatically generated by COMPSs runtime",
             "encodingFormat": [
                 [
@@ -269,7 +312,8 @@
                     }
                 ]
             ],
-            "name": "complete_graph.svg"
+            "name": "complete_graph.svg",
+            "sha256": "03c6482c4db64a03e9b1cdba304d9180ee03a39de90cc45b70fd06ed37e69aab"
         },
         {
             "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817",
@@ -279,7 +323,7 @@
         {
             "@id": "App_Profile.json",
             "@type": "File",
-            "contentSize": 2295,
+            "contentSize": 3095,
             "description": "COMPSs application Tasks profile",
             "encodingFormat": [
                 "application/json",
@@ -287,15 +331,17 @@
                     "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
                 }
             ],
-            "name": "App_Profile.json"
+            "name": "App_Profile.json",
+            "sha256": "e280bcdabcc0890842e157bc7d73bf7e8433a3e266f0923610599f2cb9594b6b"
         },
         {
             "@id": "compss_submission_command_line.txt",
             "@type": "File",
-            "contentSize": 755,
+            "contentSize": 434,
             "description": "COMPSs submission command line (runcompss / enqueue_compss), including flags and parameters passed to the application",
             "encodingFormat": "text/plain",
-            "name": "compss_submission_command_line.txt"
+            "name": "compss_submission_command_line.txt",
+            "sha256": "28bea3d0ff83d9de53711d715fcc306b576a23d62c242ffa255ac54f0401daff"
         },
         {
             "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/818",
@@ -303,9 +349,9 @@
             "name": "YAML"
         },
         {
-            "@id": "ro-crate-info.yaml",
+            "@id": "FULL.yaml",
             "@type": "File",
-            "contentSize": 651,
+            "contentSize": 600,
             "description": "COMPSs Workflow Provenance YAML configuration file",
             "encodingFormat": [
                 "YAML",
@@ -313,467 +359,690 @@
                     "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/818"
                 }
             ],
-            "name": "ro-crate-info.yaml"
-        },
-        {
-            "@id": "application_sources/src/lysozyme_in_water_full_singularity.py",
-            "@type": [
-                "File",
-                "SoftwareSourceCode"
-            ],
-            "contentSize": 10194,
-            "description": "Auxiliary File",
-            "encodingFormat": "text/plain",
-            "name": "lysozyme_in_water_full_singularity.py"
-        },
-        {
-            "@id": "application_sources/src/lysozyme_in_water_full.py",
-            "@type": [
-                "File",
-                "SoftwareSourceCode"
-            ],
-            "contentSize": 8957,
-            "description": "Auxiliary File",
-            "encodingFormat": "text/plain",
-            "name": "lysozyme_in_water_full.py"
+            "name": "FULL.yaml",
+            "sha256": "4445371fd9ef4d69d3064b366af1e8ee53e2cad58640f04d5afb4ee1a3225b6b"
         },
         {
             "@id": "application_sources/launch_full.sh",
             "@type": "File",
-            "contentSize": 1565,
+            "contentSize": 1558,
             "description": "Auxiliary File",
             "name": "launch_full.sh"
         },
         {
-            "@id": "dataset/lysozyme_in_water/config/energy.selection",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/config/energy.selection",
             "@type": "File",
             "contentSize": 3,
-            "dateModified": "2024-01-23T13:30:41",
+            "dateModified": "2024-04-26T13:10:25+00:00",
             "name": "energy.selection",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/config/genion.group",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/config/genion.group",
             "@type": "File",
             "contentSize": 3,
-            "dateModified": "2024-01-23T13:30:41",
+            "dateModified": "2024-04-26T13:10:25+00:00",
             "name": "genion.group",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/config/ions.mdp",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/config/ions.mdp",
             "@type": "File",
             "contentSize": 1044,
-            "dateModified": "2024-01-23T13:30:41",
+            "dateModified": "2024-04-26T13:10:25+00:00",
             "name": "ions.mdp",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/config/minim.mdp",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/config/minim.mdp",
             "@type": "File",
             "contentSize": 971,
-            "dateModified": "2024-01-23T13:30:41",
+            "dateModified": "2024-04-26T13:10:25+00:00",
             "name": "minim.mdp",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/dataset_small/1aki.pdb",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/dataset_small/1aki.pdb",
             "@type": "File",
             "contentSize": 109917,
-            "dateModified": "2024-01-23T13:30:41",
+            "dateModified": "2024-04-26T13:10:27+00:00",
             "name": "1aki.pdb",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/dataset_small/1u3m.pdb",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/dataset_small/1u3m.pdb",
             "@type": "File",
             "contentSize": 2998215,
-            "dateModified": "2024-01-23T13:30:41",
+            "dateModified": "2024-04-26T13:10:27+00:00",
             "name": "1u3m.pdb",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/dataset_small/1xyw.pdb",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/dataset_small/1xyw.pdb",
             "@type": "File",
             "contentSize": 2918025,
-            "dateModified": "2024-01-23T13:30:41",
+            "dateModified": "2024-04-26T13:10:27+00:00",
             "name": "1xyw.pdb",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1aki.gro",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki.gro",
             "@type": "File",
             "contentSize": 88246,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1aki.gro",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1aki.top",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki.top",
             "@type": "File",
-            "contentSize": 577586,
-            "dateModified": "2024-01-24T14:27:52",
+            "contentSize": 577599,
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1aki.top",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1aki_em.tpr",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_em.tpr",
             "@type": "File",
             "contentSize": 1280044,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1aki_em.tpr",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1aki_em_energy.edr",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_em_energy.edr",
             "@type": "File",
             "contentSize": 8976,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1aki_em_energy.edr",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1aki_ions.tpr",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_ions.tpr",
             "@type": "File",
             "contentSize": 1279304,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1aki_ions.tpr",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1aki_newbox.gro",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_newbox.gro",
             "@type": "File",
             "contentSize": 88246,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1aki_newbox.gro",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1aki_potential.xvg",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_potential.png",
             "@type": "File",
-            "contentSize": 2142,
-            "dateModified": "2024-01-24T14:27:52",
-            "name": "1aki_potential.xvg",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "contentSize": 7939,
+            "dateModified": "2024-07-12T10:15:01+00:00",
+            "name": "1aki_potential.png",
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1aki_solv.gro",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_potential.xvg",
+            "@type": "File",
+            "contentSize": 2166,
+            "dateModified": "2024-07-12T10:15:01+00:00",
+            "name": "1aki_potential.xvg",
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
+        },
+        {
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_solv.gro",
             "@type": "File",
             "contentSize": 1525186,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1aki_solv.gro",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1aki_solv_ions.gro",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_solv_ions.gro",
             "@type": "File",
             "contentSize": 1524475,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1aki_solv_ions.gro",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1u3m.gro",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m.gro",
             "@type": "File",
             "contentSize": 82046,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1u3m.gro",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1u3m.top",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m.top",
             "@type": "File",
-            "contentSize": 537920,
-            "dateModified": "2024-01-24T14:27:52",
+            "contentSize": 537933,
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1u3m.top",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1u3m_em.tpr",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_em.tpr",
             "@type": "File",
             "contentSize": 1416272,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1u3m_em.tpr",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1u3m_em_energy.edr",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_em_energy.edr",
             "@type": "File",
             "contentSize": 8976,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1u3m_em_energy.edr",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1u3m_ions.tpr",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_ions.tpr",
             "@type": "File",
             "contentSize": 1415196,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1u3m_ions.tpr",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1u3m_newbox.gro",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_newbox.gro",
             "@type": "File",
             "contentSize": 82046,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1u3m_newbox.gro",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1u3m_potential.xvg",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_potential.png",
             "@type": "File",
-            "contentSize": 2160,
-            "dateModified": "2024-01-24T14:27:52",
-            "name": "1u3m_potential.xvg",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "contentSize": 7464,
+            "dateModified": "2024-07-12T10:15:01+00:00",
+            "name": "1u3m_potential.png",
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1u3m_solv.gro",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_potential.xvg",
+            "@type": "File",
+            "contentSize": 2159,
+            "dateModified": "2024-07-12T10:15:01+00:00",
+            "name": "1u3m_potential.xvg",
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
+        },
+        {
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_solv.gro",
             "@type": "File",
             "contentSize": 1837046,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1u3m_solv.gro",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1u3m_solv_ions.gro",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_solv_ions.gro",
             "@type": "File",
             "contentSize": 1836965,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1u3m_solv_ions.gro",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1xyw.gro",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw.gro",
             "@type": "File",
             "contentSize": 80112,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1xyw.gro",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1xyw.top",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw.top",
             "@type": "File",
-            "contentSize": 523996,
-            "dateModified": "2024-01-24T14:27:52",
+            "contentSize": 524009,
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1xyw.top",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1xyw_em.tpr",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_em.tpr",
             "@type": "File",
             "contentSize": 1408872,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1xyw_em.tpr",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1xyw_em_energy.edr",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_em_energy.edr",
             "@type": "File",
             "contentSize": 8780,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1xyw_em_energy.edr",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1xyw_ions.tpr",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_ions.tpr",
             "@type": "File",
             "contentSize": 1407844,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1xyw_ions.tpr",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1xyw_newbox.gro",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_newbox.gro",
             "@type": "File",
             "contentSize": 80112,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1xyw_newbox.gro",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1xyw_potential.xvg",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_potential.png",
+            "@type": "File",
+            "contentSize": 8525,
+            "dateModified": "2024-07-12T10:15:01+00:00",
+            "name": "1xyw_potential.png",
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
+        },
+        {
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_potential.xvg",
             "@type": "File",
             "contentSize": 2144,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1xyw_potential.xvg",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1xyw_solv.gro",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_solv.gro",
             "@type": "File",
             "contentSize": 1845237,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1xyw_solv.gro",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "dataset/lysozyme_in_water/output/1xyw_solv_ions.gro",
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_solv_ions.gro",
             "@type": "File",
             "contentSize": 1845066,
-            "dateModified": "2024-01-24T14:27:52",
+            "dateModified": "2024-07-12T10:15:01+00:00",
             "name": "1xyw_solv_ions.gro",
-            "sdDatePublished": "2024-01-24T14:28:04+00:00"
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "https://orcid.org/0000-0003-0606-2512",
-            "@type": "Person",
-            "affiliation": {
-                "@id": "https://ror.org/05sd8tv96"
-            },
-            "contactPoint": {
-                "@id": "mailto:Raul.Sirvent@bsc.es"
-            },
-            "name": "Ra\u00fcl Sirvent"
+            "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/POTENTIAL_RESULTS.png",
+            "@type": "File",
+            "contentSize": 4308,
+            "dateModified": "2024-07-12T10:15:01+00:00",
+            "name": "POTENTIAL_RESULTS.png",
+            "sdDatePublished": "2024-07-12T10:15:07+00:00"
         },
         {
-            "@id": "mailto:Raul.Sirvent@bsc.es",
-            "@type": "ContactPoint",
-            "contactType": "Author",
-            "email": "Raul.Sirvent@bsc.es",
-            "identifier": "Raul.Sirvent@bsc.es",
-            "url": "https://orcid.org/0000-0003-0606-2512"
+            "@id": "#slurm_job_user",
+            "@type": "PropertyValue",
+            "name": "SLURM_JOB_USER",
+            "value": "bsc019057"
         },
         {
-            "@id": "#COMPSs_Workflow_Run_Crate_marenostrum4_SLURM_JOB_ID_31507118",
+            "@id": "#slurm_job_uid",
+            "@type": "PropertyValue",
+            "name": "SLURM_JOB_UID",
+            "value": "2952"
+        },
+        {
+            "@id": "#slurm_submit_dir",
+            "@type": "PropertyValue",
+            "name": "SLURM_SUBMIT_DIR",
+            "value": "/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water"
+        },
+        {
+            "@id": "#slurm_job_start_time",
+            "@type": "PropertyValue",
+            "name": "SLURM_JOB_START_TIME",
+            "value": "1720779130"
+        },
+        {
+            "@id": "#slurm_job_end_time",
+            "@type": "PropertyValue",
+            "name": "SLURM_JOB_END_TIME",
+            "value": "1720779730"
+        },
+        {
+            "@id": "#compss_python_version",
+            "@type": "PropertyValue",
+            "name": "COMPSS_PYTHON_VERSION",
+            "value": "3.12.1"
+        },
+        {
+            "@id": "#slurm_job_cpus_per_node",
+            "@type": "PropertyValue",
+            "name": "SLURM_JOB_CPUS_PER_NODE",
+            "value": "112(x2)"
+        },
+        {
+            "@id": "#slurm_job_partition",
+            "@type": "PropertyValue",
+            "name": "SLURM_JOB_PARTITION",
+            "value": "gpp"
+        },
+        {
+            "@id": "#slurm_job_num_nodes",
+            "@type": "PropertyValue",
+            "name": "SLURM_JOB_NUM_NODES",
+            "value": "2"
+        },
+        {
+            "@id": "#slurm_job_qos",
+            "@type": "PropertyValue",
+            "name": "SLURM_JOB_QOS",
+            "value": "gp_debug"
+        },
+        {
+            "@id": "#compss_worker_nodes",
+            "@type": "PropertyValue",
+            "name": "COMPSS_WORKER_NODES",
+            "value": " gs05r2b63"
+        },
+        {
+            "@id": "#slurm_mem_per_cpu",
+            "@type": "PropertyValue",
+            "name": "SLURM_MEM_PER_CPU",
+            "value": "2000"
+        },
+        {
+            "@id": "#slurm_job_account",
+            "@type": "PropertyValue",
+            "name": "SLURM_JOB_ACCOUNT",
+            "value": "bsc19"
+        },
+        {
+            "@id": "#compss_master_node",
+            "@type": "PropertyValue",
+            "name": "COMPSS_MASTER_NODE",
+            "value": "gs05r2b62"
+        },
+        {
+            "@id": "#slurm_submit_host",
+            "@type": "PropertyValue",
+            "name": "SLURM_SUBMIT_HOST",
+            "value": "glogin2"
+        },
+        {
+            "@id": "#slurm_job_id",
+            "@type": "PropertyValue",
+            "name": "SLURM_JOB_ID",
+            "value": "3844353"
+        },
+        {
+            "@id": "#compss_worker_init_timeout",
+            "@type": "PropertyValue",
+            "name": "COMPSS_WORKER_INIT_TIMEOUT",
+            "value": "360000"
+        },
+        {
+            "@id": "#slurm_job_name",
+            "@type": "PropertyValue",
+            "name": "SLURM_JOB_NAME",
+            "value": "COMPSs"
+        },
+        {
+            "@id": "#compss_home",
+            "@type": "PropertyValue",
+            "name": "COMPSS_HOME",
+            "value": "/apps/GPP/COMPSs/3.3.1/"
+        },
+        {
+            "@id": "#slurm_job_gid",
+            "@type": "PropertyValue",
+            "name": "SLURM_JOB_GID",
+            "value": "50000"
+        },
+        {
+            "@id": "#compss_mpirun_type",
+            "@type": "PropertyValue",
+            "name": "COMPSS_MPIRUN_TYPE",
+            "value": "impi"
+        },
+        {
+            "@id": "#slurm_job_nodelist",
+            "@type": "PropertyValue",
+            "name": "SLURM_JOB_NODELIST",
+            "value": "gs05r2b[62-63]"
+        },
+        {
+            "@id": "#COMPSs_Workflow_Run_Crate_marenostrum5_SLURM_JOB_ID_3844353",
             "@type": "CreateAction",
             "actionStatus": {
                 "@id": "http://schema.org/CompletedActionStatus"
             },
             "agent": {
-                "@id": "https://orcid.org/0000-0003-0606-2512"
+                "@id": "https://orcid.org/0000-0001-6401-6229"
             },
-            "description": "Linux s02r1b45 4.4.59-92.20-default #1 SMP Wed May 31 14:05:24 UTC 2017 (8cd473d) x86_64 x86_64 x86_64 GNU/Linux SLURM_JOB_NAME=COMPSs COMPSS_PYTHON_VERSION=3.9.10 SLURM_JOB_QOS=debug SLURM_MEM_PER_CPU=1880 SLURM_JOB_ID=31507118 SLURM_JOB_USER=bsc19057 COMPSS_HOME=/apps/COMPSs/3.3/ SLURM_JOB_UID=2952 SLURM_SUBMIT_DIR=/gpfs/home/bsc19/bsc19057/Tutorial_2024/lysozyme_in_water SLURM_JOB_NODELIST=s02r1b[45-46] SLURM_JOB_GID=2950 SLURM_JOB_CPUS_PER_NODE=48(x2) COMPSS_MPIRUN_TYPE=impi SLURM_SUBMIT_HOST=login3 SLURM_JOB_PARTITION=main SLURM_JOB_ACCOUNT=bsc19 SLURM_JOB_NUM_NODES=2 COMPSS_MASTER_NODE=s02r1b45 COMPSS_WORKER_NODES= s02r1b46",
-            "endTime": "2024-01-24T14:28:04+00:00",
+            "description": "Linux gs05r2b62 5.14.0-284.30.1.el9_2.x86_64 #1 SMP PREEMPT_DYNAMIC Fri Aug 25 09:13:12 EDT 2023 x86_64 x86_64 x86_64 GNU/Linux",
+            "endTime": "2024-07-12T10:15:07+00:00",
+            "environment": [
+                {
+                    "@id": "#slurm_job_user"
+                },
+                {
+                    "@id": "#slurm_job_uid"
+                },
+                {
+                    "@id": "#slurm_submit_dir"
+                },
+                {
+                    "@id": "#slurm_job_start_time"
+                },
+                {
+                    "@id": "#slurm_job_end_time"
+                },
+                {
+                    "@id": "#compss_python_version"
+                },
+                {
+                    "@id": "#slurm_job_cpus_per_node"
+                },
+                {
+                    "@id": "#slurm_job_partition"
+                },
+                {
+                    "@id": "#slurm_job_num_nodes"
+                },
+                {
+                    "@id": "#slurm_job_qos"
+                },
+                {
+                    "@id": "#compss_worker_nodes"
+                },
+                {
+                    "@id": "#slurm_mem_per_cpu"
+                },
+                {
+                    "@id": "#slurm_job_account"
+                },
+                {
+                    "@id": "#compss_master_node"
+                },
+                {
+                    "@id": "#slurm_submit_host"
+                },
+                {
+                    "@id": "#slurm_job_id"
+                },
+                {
+                    "@id": "#compss_worker_init_timeout"
+                },
+                {
+                    "@id": "#slurm_job_name"
+                },
+                {
+                    "@id": "#compss_home"
+                },
+                {
+                    "@id": "#slurm_job_gid"
+                },
+                {
+                    "@id": "#compss_mpirun_type"
+                },
+                {
+                    "@id": "#slurm_job_nodelist"
+                }
+            ],
             "instrument": {
-                "@id": "application_sources/src/lysozyme_in_water.py"
+                "@id": "application_sources/src/lysozyme_in_water_full.py"
             },
-            "name": "COMPSs lysozyme_in_water.py execution at marenostrum4 with JOB_ID 31507118",
+            "name": "COMPSs lysozyme_in_water_full.py execution at marenostrum5 with JOB_ID 3844353",
             "object": [
                 {
-                    "@id": "dataset/lysozyme_in_water/config/energy.selection"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/config/energy.selection"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/config/genion.group"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/config/genion.group"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/config/ions.mdp"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/config/ions.mdp"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/config/minim.mdp"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/config/minim.mdp"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/dataset_small/1aki.pdb"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/dataset_small/1aki.pdb"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/dataset_small/1u3m.pdb"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/dataset_small/1u3m.pdb"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/dataset_small/1xyw.pdb"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/dataset_small/1xyw.pdb"
                 }
             ],
             "result": [
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1aki.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki.gro"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1aki.top"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki.top"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1aki_em.tpr"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_em.tpr"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1aki_em_energy.edr"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_em_energy.edr"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1aki_ions.tpr"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_ions.tpr"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1aki_newbox.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_newbox.gro"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1aki_potential.xvg"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_potential.png"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1aki_solv.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_potential.xvg"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1aki_solv_ions.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_solv.gro"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1u3m.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1aki_solv_ions.gro"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1u3m.top"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m.gro"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1u3m_em.tpr"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m.top"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1u3m_em_energy.edr"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_em.tpr"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1u3m_ions.tpr"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_em_energy.edr"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1u3m_newbox.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_ions.tpr"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1u3m_potential.xvg"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_newbox.gro"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1u3m_solv.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_potential.png"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1u3m_solv_ions.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_potential.xvg"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1xyw.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_solv.gro"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1xyw.top"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1u3m_solv_ions.gro"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1xyw_em.tpr"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw.gro"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1xyw_em_energy.edr"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw.top"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1xyw_ions.tpr"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_em.tpr"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1xyw_newbox.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_em_energy.edr"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1xyw_potential.xvg"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_ions.tpr"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1xyw_solv.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_newbox.gro"
                 },
                 {
-                    "@id": "dataset/lysozyme_in_water/output/1xyw_solv_ions.gro"
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_potential.png"
+                },
+                {
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_potential.xvg"
+                },
+                {
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_solv.gro"
+                },
+                {
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/1xyw_solv_ions.gro"
+                },
+                {
+                    "@id": "file://gs05r2b62-ib0/gpfs/home/bsc/bsc019057/Tutorial_2024/lysozyme_in_water/output/POTENTIAL_RESULTS.png"
                 },
                 {
                     "@id": "./"
                 }
             ],
+            "startTime": "2024-07-12T10:12:10+00:00",
             "subjectOf": [
                 "https://userportal.bsc.es/"
             ]
         },
         {
-            "@id": "https://w3id.org/ro/wfrun/process/0.1",
-            "@type": "CreativeWork",
-            "name": "Process Run Crate",
-            "version": "0.1"
+            "@id": "compss-3844353.out",
+            "@type": "File",
+            "about": "#COMPSs_Workflow_Run_Crate_marenostrum5_SLURM_JOB_ID_3844353",
+            "contentSize": 4543,
+            "description": "COMPSs console standard output log file",
+            "encodingFormat": "text/plain",
+            "name": "compss-3844353.out"
         },
         {
-            "@id": "https://w3id.org/ro/wfrun/workflow/0.1",
+            "@id": "compss-3844353.err",
+            "@type": "File",
+            "about": "#COMPSs_Workflow_Run_Crate_marenostrum5_SLURM_JOB_ID_3844353",
+            "contentSize": 100,
+            "description": "COMPSs console standard error log file",
+            "encodingFormat": "text/plain",
+            "name": "compss-3844353.err"
+        },
+        {
+            "@id": "https://w3id.org/ro/wfrun/process/0.4",
+            "@type": "CreativeWork",
+            "name": "Process Run Crate",
+            "version": "0.4"
+        },
+        {
+            "@id": "https://w3id.org/ro/wfrun/workflow/0.4",
             "@type": "CreativeWork",
             "name": "Workflow Run Crate",
-            "version": "0.1"
+            "version": "0.4"
         },
         {
             "@id": "https://w3id.org/workflowhub/workflow-ro-crate/1.0",
