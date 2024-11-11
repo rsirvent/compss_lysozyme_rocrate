@@ -1,5 +1,5 @@
 COMPSs Workflow Information:
-  name: Lysozyme in water full
+  name: Lysozyme in water full simulation
   description: Lysozyme in water full COMPSs application
   license: Apache-2.0
   sources: [src/, launch_full.sh]
